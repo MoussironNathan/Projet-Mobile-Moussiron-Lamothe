@@ -2,4 +2,7 @@
     <string name="app_name">ProjetDevMobileMoussironLamothe</string>
     <string name="info">Info</string>
     <string name="produits">Produits</string>
+    <string name="products_url">Products_url</string>
+    <string name="title">Title</string>
+    <string name="categorie">Categorie</string>
 </resources>
