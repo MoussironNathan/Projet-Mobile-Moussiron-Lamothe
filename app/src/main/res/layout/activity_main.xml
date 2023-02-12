@@ -13,9 +13,9 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/buttonInfo"
-        style="@style/HomeButton"
-        android:text="@string/info" />
+            android:id="@+id/buttonInfo"
+            style="@style/HomeButton"
+            android:text="@string/info" />
 
     <Button
         android:id="@+id/buttonProduits"

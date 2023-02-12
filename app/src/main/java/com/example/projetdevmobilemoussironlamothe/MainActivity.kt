@@ -1,7 +1,6 @@
 package com.example.projetdevmobilemoussironlamothe
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -11,20 +10,15 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        setHeaderTxt("EPSI")
+        val buttonInfo = findViewById<Button>(R.id.buttonInfo)
 
-        val infoButton = findViewById<Button>(R.id.buttonInfo)
-        val produitButton = findViewById<Button>(R.id.buttonProduits)
+        setHeaderTxt("Epsi")
 
-        infoButton.setOnClickListener(View.OnClickListener {
+        buttonInfo.setOnClickListener(View.OnClickListener {
             val intent = Intent(application, InfoActivity::class.java)
             startActivity(intent)
         })
 
-        produitButton.setOnClickListener(View.OnClickListener {
-            val intent = Intent(application, ProduitsActivity::class.java)
-            startActivity(intent)
-        })
     }
-    //coucou
+
 }
