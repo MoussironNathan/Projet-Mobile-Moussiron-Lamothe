@@ -6,14 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 
 class CategoriesAdapter(val context: Context, val categories: ArrayList<Categories>) :
     RecyclerView.Adapter<CategoriesAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val textViewCategorieTitle = view.findViewById<Button>(R.id.ButtonCategorieTitle)
+        val textViewCategorieTitle = view.findViewById<Button>(R.id.produitName)
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
@@ -27,6 +26,9 @@ class CategoriesAdapter(val context: Context, val categories: ArrayList<Categori
         holder.textViewCategorieTitle.text = categorie.title
         holder.textViewCategorieTitle.setOnClickListener(View.OnClickListener {
             val intent = Intent(context, ProduitsActivity::class.java)
+            intent.putExtra("title", categorie.title)
+            intent.putExtra("product_url", categorie.products_url)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             context.startActivity(intent)
         })
     }
