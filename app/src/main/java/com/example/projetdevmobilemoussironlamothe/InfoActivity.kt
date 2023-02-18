@@ -18,10 +18,12 @@ class InfoActivity : BaseActivity() {
 
         buttonStudent1.setOnClickListener(View.OnClickListener {
             val intent = Intent(application, StudentActivity::class.java)
+            intent.putExtra("nom", "Moussiron")
             startActivity(intent)
         })
         buttonStudent2.setOnClickListener(View.OnClickListener {
             val intent = Intent(application, StudentActivity::class.java)
+            intent.putExtra("nom", "Lamothe")
             startActivity(intent)
         })
     }
