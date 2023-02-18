@@ -19,6 +19,15 @@
         <activity
                 android:name=".ProduitsActivity"
                 android:exported="false" />
+        <activty
+            android:name=".DetailProduitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProduitsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriesActivity"
+            android:exported="false" />
         <activity
                 android:name=".InfoActivity"
                 android:exported="false" />

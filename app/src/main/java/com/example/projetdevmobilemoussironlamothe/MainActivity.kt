@@ -10,15 +10,20 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val buttonInfo = findViewById<Button>(R.id.buttonInfo)
+        setHeaderTxt("EPSI")
 
-        setHeaderTxt("Epsi")
+        val infoButton = findViewById<Button>(R.id.buttonInfo)
+        val produitButton = findViewById<Button>(R.id.buttonProduits)
 
-        buttonInfo.setOnClickListener(View.OnClickListener {
+        infoButton.setOnClickListener(View.OnClickListener {
             val intent = Intent(application, InfoActivity::class.java)
             startActivity(intent)
         })
 
+        produitButton.setOnClickListener(View.OnClickListener {
+            val intent = Intent(application, CategoriesActivity::class.java)
+            startActivity(intent)
+        })
     }
 
 }

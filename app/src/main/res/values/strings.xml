@@ -9,4 +9,8 @@
     <string name="MailStudent1">nathan.moussiron@epsi.fr</string>
     <string name="GroupStudent1">Dev Full stack Groupe 1</string>
     <string name="https_www_epsi_fr">https://www.epsi.fr/</string>
+    <string name="products_url">Products_url</string>
+    <string name="title">Title</string>
+    <string name="categorie">Categorie</string>
+    <string name="description">Description :</string>
 </resources>
